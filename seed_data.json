@@ -1,0 +1,181 @@
+{
+  "users": {
+    "admin_uid": {
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "phone": "0123456789",
+      "avatar_url": "",
+      "role": "admin",
+      "created_at": 1710000000
+    },
+    "user1": {
+      "name": "Nguyen Van A",
+      "email": "user@gmail.com",
+      "phone": "0987654321",
+      "avatar_url": "",
+      "role": "user",
+      "created_at": 1710000000
+    }
+  },
+  "categories": {
+    "cat1": {
+      "name": "Thức ăn",
+      "emoji": "🍔",
+      "slug": "thuc-an",
+      "sort_order": 1
+    },
+    "cat2": {
+      "name": "Đồ uống",
+      "emoji": "🥤",
+      "slug": "do-uong",
+      "sort_order": 2
+    }
+  },
+  "foods": {
+    "food1": {
+      "name": "Pizza Hải Sản",
+      "description": "Pizza siêu ngon",
+      "price": 120000,
+      "original_price": 150000,
+      "image_url": "",
+      "rating": 4.5,
+      "review_count": 10,
+      "category_id": "cat1",
+      "is_featured": true,
+      "is_available": true,
+      "created_at": 1710000000,
+      "variants": {
+        "v1": {
+          "size": "Nhỏ",
+          "price_adjustment": 0
+        },
+        "v2": {
+          "size": "Lớn",
+          "price_adjustment": 20000
+        }
+      }
+    },
+    "food2": {
+      "name": "Gà rán",
+      "description": "Giòn rụm",
+      "price": 80000,
+      "original_price": 100000,
+      "image_url": "",
+      "rating": 4.7,
+      "review_count": 20,
+      "category_id": "cat1",
+      "is_featured": false,
+      "is_available": true,
+      "created_at": 1710000000
+    },
+    "food3": {
+      "name": "Trà sữa",
+      "description": "Ngọt thơm",
+      "price": 30000,
+      "original_price": 35000,
+      "image_url": "",
+      "rating": 4.8,
+      "review_count": 25,
+      "category_id": "cat2",
+      "is_featured": true,
+      "is_available": true,
+      "created_at": 1710000000
+    }
+  },
+  "carts": {
+    "user1": {
+      "items": {
+        "item1": {
+          "food_id": "food1",
+          "name": "Pizza Hải Sản",
+          "price": 120000,
+          "quantity": 2,
+          "size": "Vừa"
+        }
+      }
+    }
+  },
+  "orders": {
+    "order1": {
+      "user_id": "user1",
+      "address_id": "addr1",
+      "status": "pending",
+      "payment_method": "cod",
+      "subtotal": 240000,
+      "delivery_fee": 15000,
+      "discount": 0,
+      "total": 255000,
+      "created_at": 1710000000,
+      "items": {
+        "item1": {
+          "food_id": "food1",
+          "food_name": "Pizza Hải Sản",
+          "food_price": 120000,
+          "quantity": 2,
+          "size": "Vừa"
+        }
+      }
+    }
+  },
+  "addresses": {
+    "addr1": {
+      "user_id": "user1",
+      "label": "Nhà",
+      "street": "123 Lê Lợi",
+      "ward": "Phường 1",
+      "district": "Quận 1",
+      "city": "HCM",
+      "is_default": true
+    }
+  },
+  "reviews": {
+    "review1": {
+      "user_id": "user1",
+      "food_id": "food1",
+      "order_id": "order1",
+      "rating": 5,
+      "comment": "Rất ngon",
+      "created_at": 1710000000
+    }
+  },
+  "orders": {
+    "order_sample_01": {
+      "userId": "user1",
+      "address": "123 Đường Lê Lợi, Quận 1, TP.HCM",
+      "notes": "Lấy cho mình thêm tương ớt nhé!",
+      "status": "preparing",
+      "totalPrice": 150000,
+      "createdAt": 1713876000000,
+      "items": [
+        {
+          "foodId": "food1",
+          "foodName": "Burger Bò Đặc Biệt",
+          "quantity": 2,
+          "price": 60000
+        },
+        {
+          "foodId": "food2",
+          "foodName": "Coca Cola",
+          "quantity": 1,
+          "price": 30000
+        }
+      ]
+    },
+    "order_sample_02": {
+      "userId": "user1",
+      "address": "456 CMT8, Quận 3, TP.HCM",
+      "notes": "Không hành tây",
+      "status": "ready",
+      "totalPrice": 85000,
+      "createdAt": 1713877500000,
+      "items": [
+        {
+          "foodId": "food3",
+          "foodName": "Pizza Hải Sản Size S",
+          "quantity": 1,
+          "price": 85000
+        }
+      ]
+    }
+  }
+}

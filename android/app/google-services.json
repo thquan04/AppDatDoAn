@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "108669530022",
+    "firebase_url": "https://diary-app-d8606-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "diary-app-d8606",
+    "storage_bucket": "diary-app-d8606.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108669530022:android:f67b8d6c3ce8fcd4c36967",
+        "android_client_info": {
+          "package_name": "com.example.diary_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3mgjtG7cMhID1B45PbwP3szX98TbFrZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
