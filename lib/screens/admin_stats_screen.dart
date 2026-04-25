@@ -122,8 +122,10 @@ class _AdminStatsScreenState extends State<AdminStatsScreen> {
       ),
     );
 
-    await Printing.layoutPdf(
-      onLayout: (PdfPageFormat format) async => pdf.save(),
+    final bytes = await pdf.save();
+    await Printing.sharePdf(
+      bytes: bytes,
+      filename: 'bao_cao_thong_ke_${DateFormat('yyyyMMdd').format(DateTime.now())}.pdf',
     );
   }
 
@@ -166,8 +168,8 @@ class _AdminStatsScreenState extends State<AdminStatsScreen> {
         ),
         child: ElevatedButton.icon(
           onPressed: _exportToPdf,
-          icon: const Icon(Icons.picture_as_pdf),
-          label: const Text('XUẤT BÁO CÁO PDF', style: TextStyle(fontWeight: FontWeight.bold)),
+          icon: const Icon(Icons.download),
+          label: const Text('TẢI BÁO CÁO PDF', style: TextStyle(fontWeight: FontWeight.bold)),
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.redAccent,
             foregroundColor: Colors.white,
